@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - State of the World Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header>
+  <title> Existential Questionnaire </title>
+  
+  <h1 id="title">Existential Questionnaire</h1>
+
+  <p id="description"> we thank you for sharing your unique perspective...</p>
+
+</header>
+
+<form id="survey-form">
+
+  <div class="form-group">
+    <label id="name-label" for="name">Preferred Name:</label>
+    <input type="text" name="name" id="name" class="form-control" placeholder="enter your name" required />
+  </div>
+
+  <div class="form-group">
+    <label id="email-label"> Preferred Email: </label>
+    <input type="text" name="email" id="email" class="form-control" placeholder="enter your email" required />
+  </div>
+
+  <div class="form-group">
+    <label id="number-label" for="number">Age <span class="clue">(Optional):</span></label>
+    <input type="number" name="age" id="number" max="107" min="1" class="form-control" placeholder="age" />
+  </div>
+
+ <div class ="form-group">
+    <label id="god">God? </label>
+     <label> <input type="radio"
+             name="god"
+             class="radioInput"
+             id="yes"
+                    value="yes"> yes </label>
+      <label> <input type="radio"
+              name="god"
+             class="radioInput"
+              id="no"
+                     value="no"> no </label>
+       <label>  <input type="radio"
+                name="god"
+             class="radioInput"
+              id="maybe"
+                       value="maybe"> maybe</label>
+      <label> <input type="radio"
+              name="god"
+             class="radioInput"
+              id="undecided"
+              value="maybe"> undecided</label>
+</div> 
+  
+  <div class="form-group">
+    <label id="satisfactionLabel" for="satisfaction">How satisfied are you with the current state of the world?</label>
+    <select id="dropdown" name="satisfaction" required>
+    <option disable selected value>Select an option</option>
+    <option value="Not Satisfied">Not satisfied</option>
+    <option value="Neutral">Neutral</option>
+    <option value="Little Satisfied">A little satisfied</option>
+    <option value="Very Satisfied"> Very satisfied</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <p>Would you recommend this planet to an extraterrestrial being? </p>
+    <label class="Recommend">
+      <input type="radio" name="recommend" id="definitelyNotButton" class="radioInput" value= "Definitely not">Definitely not</label>
+    <label class="Recommend">
+      <input type="radio" name="recommend" id="NoButton" class="radioInput" value = "No">No </label>
+    <label class="Recommend">
+      <input type="radio" name="recommend" id="maybeButton" class="radioInput" value="Maybe">Maybe </label>
+    <label class="Recommend">
+      <input type="radio" name="recommend" id="absolutelyButton" class="radioInput" value="Absolutely">Absolutely </label>
+  </div>
+
+<div class="form-group"> <p> What would you fix first?  <span class="clue">(check all that apply)</span></p>
+ <label> <input type="radio" name="improvement" class="radioInput"  value="climateChange"/>  The climate change crisis</label>
+  <label> <input type="radio" name="improvement" class="radioInput" value="liberation"/>  The opression of working class and BIPOC individuals </label>
+  <label> <input type="radio" name="improvement" class="radioInput"  value="healthcare"/>  America's health care crisis </label>
+  <label> <input type="radio" name="improvement" class="radioInput" value="technology"/>  Surveillance capitalism </label>
+  <label> <input type="radio" name="improvement" class="radioInput" value="taxes"/>  Big corp tax redistribution </label>
+   <label> <input type="radio" name="improvement" class="radioInput" value="animals"/>  Animal genocide in the meat and dairy industry </label>
+  <label> <input type="radio" name="improvement" class="radioInput" value="undecided"/>  Too hard to decide </label>
+</div>
+  
+  <div class="form-group"> <p> Emotional state in the last 24 hours  <span class="clue">(check all that apply):</span></p>
+     <label> <input type="checkbox" name="emotionalState" class="checkboxInput"  value="Happy"/>  Happy</label>
+  <label> <input type="checkbox" name="emotionalState" class="checkboxInput" value="Sad"/>  Sad </label>
+      <label> <input type="checkbox" name="emotionalState" class="checkboxInput" value="Tired"/>  Tired</label>
+      <label> <input type="checkbox" name="emotionalState" class="checkboxInput" value="Scared"/>  Scared</label>
+      <label> <input type="checkbox" name="emotionalState" class="checkboxInput" value="Uninterested"/> Uninterested</label>
+    <label> <input type="checkbox" name="emotionalState" class="checkboxInput" value="Energized"/> Energized</label>
+        <label> <input type="checkbox" name="emotionalState" class="checkboxInput" value="Hopeful"/> Hopeful</label>
+</div>
+    
+  
+
+  <div>
+    <label class="form-group">
+      Any comments or suggestions:
+      <textarea name="textarea" id="comments" placeholder="enter comments here..."></textarea></label>
+  </div>
+  <div>
+    <label class="form-group"><input type="submit" name="submit" id="submit"></label>
+  </div>
+  </formgroup>
+<!-- partial -->
+  
+</body>
+</html>
